@@ -8,6 +8,8 @@
 #ifndef COMMANDS_ALL_HPP_
 #define COMMANDS_ALL_HPP_
 
+#include "cognito/getuser.hpp"
+#include "cognito/listusers.hpp"
 #include "dynamo/listtables.hpp"
 
 

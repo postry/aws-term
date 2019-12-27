@@ -16,6 +16,7 @@ namespace app
 namespace dynamo
 {
 
+//------------------------------------------------------------------------------
 class ListTables : public Command
 {
 public:
