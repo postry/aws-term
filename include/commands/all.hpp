@@ -10,7 +10,12 @@
 
 #include "cognito/getuser.hpp"
 #include "cognito/listusers.hpp"
+#include "dynamo/createcompositetable.hpp"
+#include "dynamo/createtable.hpp"
+#include "dynamo/deleteitem.hpp"
+#include "dynamo/getitem.hpp"
 #include "dynamo/listtables.hpp"
-
+#include "dynamo/putitem.hpp"
+#include "dynamo/updateitem.hpp"
 
 #endif /* COMMANDS_ALL_HPP_ */

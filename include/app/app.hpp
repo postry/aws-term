@@ -31,6 +31,7 @@ private:
     Application() = default;
     void ready();
     void invalid();
+
     std::map<std::string, Command::Ptr> commands_;
 };
 
