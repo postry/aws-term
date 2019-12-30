@@ -31,6 +31,10 @@ private:
     Application() = default;
     void ready();
     void invalid();
+    template <typename TCmd>  void addCommand(std::string name)
+    {
+        commands_[std::move(name)] =  Command::Ptr(new TCmd());
+    }
 
     std::map<std::string, Command::Ptr> commands_;
 };

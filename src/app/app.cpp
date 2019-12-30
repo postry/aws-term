@@ -52,15 +52,18 @@ void Application::run()
 //------------------------------------------------------------------------------
 void Application::addCommands()
 {
-    // CRUD
-    commands_["lstab"] = dynamo::ListTables::Ptr(new dynamo::ListTables());
-    commands_["ctab"] = dynamo::CreateTable::Ptr(new dynamo::CreateTable());
-    commands_["cctab"] = dynamo::CreateCompositeTable::Ptr(new dynamo::CreateCompositeTable());
-    commands_["putitem"] = dynamo::PutItem::Ptr(new dynamo::PutItem());
+    // DYNAMO DB
+    addCommand<dynamo::ListTables>("lstab");
+    addCommand<dynamo::CreateTable>("ctab");
+    addCommand<dynamo::CreateCompositeTable>("cctab");
+    addCommand<dynamo::PutItem>("putitem");
+    addCommand<dynamo::GetItem>("getitem");
+    addCommand<dynamo::DeleteItem>("delitem");
+    addCommand<dynamo::UpdateItem>("upditem");
 
-
-    commands_["lsuser"] = cognito::ListUsers::Ptr(new cognito::ListUsers());
-    commands_["getuser"] = cognito::GetUser::Ptr(new cognito::GetUser());
+    // USERS
+    addCommand<cognito::ListUsers>("lsuser");
+    addCommand<cognito::GetUser>("getuser");
 }
 
 //------------------------------------------------------------------------------

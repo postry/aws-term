@@ -25,7 +25,7 @@ int main()
     }
     catch (...)
     {
-        std::cerr << "error" << std::endl;
+        std::cerr << "Fatal error" << std::endl;
     }
 
     Aws::ShutdownAPI(options);
