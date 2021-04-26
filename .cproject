@@ -75,7 +75,7 @@
                             							
                             <tool id="cdt.managedbuild.tool.gnu.cpp.linker.exe.debug.135244553" name="GCC C++ Linker" superClass="cdt.managedbuild.tool.gnu.cpp.linker.exe.debug">
                                 								
-                                <option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="gnu.cpp.link.option.libs.939078738" superClass="gnu.cpp.link.option.libs" useByScannerDiscovery="false" valueType="libs">
+                                <option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="gnu.cpp.link.option.libs.939078738" name="Libraries (-l)" superClass="gnu.cpp.link.option.libs" useByScannerDiscovery="false" valueType="libs">
                                     									
                                     <listOptionValue builtIn="false" value="aws-cpp-sdk-cognito-identity"/>
                                     									
@@ -86,6 +86,10 @@
                                     <listOptionValue builtIn="false" value="aws-cpp-sdk-iam"/>
                                     									
                                     <listOptionValue builtIn="false" value="aws-cpp-sdk-core"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="aws-cpp-sdk-iot"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="aws-cpp-sdk-iot-data"/>
                                     									
                                     <listOptionValue builtIn="false" value="ssl"/>
                                     									

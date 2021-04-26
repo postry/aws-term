@@ -64,7 +64,13 @@ void Application::addCommands()
     // USERS
     addCommand<cognito::ListUsers>("lsuser");
     addCommand<cognito::GetUser>("getuser");
+
+    //IOT
+    addCommand<iot::ListThings>("lsthings");
+    addCommand<iot::GetThing>("getthing");
+    addCommand<iot::UpdateThing>("updatething");
 }
+
 
 //------------------------------------------------------------------------------
 void Application::ready()
